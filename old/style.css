@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+
+ @import url("https://use.typekit.net/prt0hpr.css");
+
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: white;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'M Ying Hei PRC W48 W7', generic;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-left: 10px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 5.653rem;
+}
+
+h2 {font-size: 3.998rem;}
+
+h3 {font-size: 2.827rem;}
+
+h4 {font-size: 1.999rem;}
+
+h5 {font-size: 1.414rem;}
+
+small, .text_small {font-size: 0.707rem;}
+
+body {
+    height: 125vh;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 80px;
+}
+
+main {
+    color: white;
+}
+/* reset some defaults */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* flexbox settings and nesting felx box here */
+body{
+
+    margin: 0 auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+.col-1 {
+  background: #D7E8D4;
+  flex: 1;
+  max-width: 414px;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  background-color: #2bdce3;
+  justify-content: left;
+}
+.content > article {
+  flex: .75;
+  min-height:20vh;
+
+}
+.content > aside {
+  background: beige;
+  flex: 1;
+}
+header, footer {
+  height: 200vh;
+  background-color: #816330;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+  justify-content: left;
+}
+.past-work{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1.5;
+  background-color: #fb36f4;
+  
+  list-style: none;
+}
+.floating-laptop{
+  display: flex;
+  max-width: 100px;
+}
+
+.past-work-and-photo{
+  flex-direction: row;
+}
+
+/* select the nav container and apply properties */
+.nav-container{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+
+/* bottom section */
+.bottom-nav {
+  position: absolute;
+  bottom: 20px;
+}
+/* target the ul and remove the bullets */
+.right-side, .left-side{
+    list-style-type: none;
+}
+/* change li display property from block to inline block */
+.right-side li, .left-side li{
+    display:block
+}
+/* style the anchor elements */
+.right-side li a, .left-side li a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: #333;
+    padding-top: 14px;
+    padding-left: 16px;
+    padding-right: 18px;
+    padding-bottom: 2px;
+}
+/* style the anchor elements Side Nav */
+.bottom-nav li a{
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  color: #333;
+
+}
+/* style the text under the logo*/
+.nav-under-logo{
+  margin: 3rem 0 1.38rem;
+  font-family: 'M Ying Hei PRC W48 W7', generic;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-left: 10px;
+}
+.border-nav-right{
+  border-right: 2px solid #0004ff;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+}
+
+li a {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+  }
+  
+  li a::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 1px;
+    left: 15px;
+    background-color: #000000;
+    transform-origin: bottom-left;
+    transition: transform 0.25s ease-out;
+  }
+  
+  li a:hover::after {
+    transform: scaleX(1);
+    transform-origin:bottom-left;
+  }
+
+  .hero{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-image{
+    display: flex;
+  }
+
+  .vert-move.flaoting-man{
+    display: flex;
+    background-color: #f8501c;
+  }
+
+  .name-with-arrow{
+    max-width: 442px;
+    align-self: center;
+  }
+
+  .name-with-arrow-container {
+    z-index: 1000;
+    transform: translate(-5rem, 3rem) !important;
+  }
+
+  img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.name{
+    margin: 0px;
+    font-style: bold;
+    line-height: 1;
+    position: absolute;
+    top: 15px;
+}
+h5.name-sub-heading{
+    margin: 0px;
+    position: absolute;
+    top: 100px;
+}
+
+footer::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.portfolio-content{
+  border-left: solid;
+  border-right: solid;
+  border-top: solid;
+  border-width: 1px;
+  text-align: center;
+  
+}
+.portfolio-header{
+  text-align: left;
+}
+
+
+
+
+i {
+  opacity: 0;
+  font-size: 18px;
+  color: #fff;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+h2{
+  pointer-events:none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  padding: 20px;
+  grid-gap: 40px;
+}
+.card{
+  background-color: #1c1b29;
+  box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+.container{
+  position: relative;
+  clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+img{
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+.container:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+.card1>.container:after{
+  background-image: linear-gradient(
+      135deg,
+      #0100ec,
+      #fb36f4
+  );
+}
+.card2>.container:after{
+  background-image: linear-gradient(
+      135deg,
+      #2bdce3,
+      #42ffdb
+  );
+}
+.card3>.container:after{
+  background-image: linear-gradient(
+      135deg,
+      #ffab1d,
+      #f8501c
+  );
+}
+.details{
+  padding: 20px 10px;
+}
+.details>h3{
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+.details>p{
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
