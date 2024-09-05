@@ -458,7 +458,7 @@ header {
 
 .active {
     border-bottom: none;
-    box-shadow: -3px 1px 0px 0px #00000040 inset, 2px 0px 0px 0px #00000040 inset;
+    /* box-shadow: -3px 1px 0px 0px #00000040 inset, 2px 0px 0px 0px #00000040 inset; */
 
 }
 
@@ -992,8 +992,8 @@ header {
     content: '';
     position: absolute;
     top: 15px;
-    left: -10px;
-    width: 100%;
+    left: -12px;
+    width: 106%;
     height: 100%;
     background-image: url('../images/button_outline.png');
     background-size: 100% 100%;
