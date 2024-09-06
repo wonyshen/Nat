@@ -33,30 +33,125 @@
 
 </head>
 <body>
-    <div class="fixed_menu">
-        <div class="dropdown custom-dropdown">
-            <div class="dropdown-toggle" id="menu1" data-toggle="dropdown">
-                <i class="fa-solid fa-bars three-dots"></i>
-                <img src="images/Layer_logo.svg">
+    <div class="all">
+        <div class="fixed_menu">
+            <div class="dropdown custom-dropdown">
+                <div class="dropdown-toggle" id="menu1" data-toggle="dropdown">
+                    <i class="fa-solid fa-bars three-dots"></i>
+                    <img src="images/Layer_logo.svg">
+                </div>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Work</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
+                </ul>
             </div>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Work</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
-            </ul>
         </div>
-    </div>
-    <div class="dashboard">
-        <img src="images/dashboard_back.jpg" class="back">
-        <div class="logo-wrapper">
-            <img src="images/sticker.png" class="sticker">
-            <img src="images/logo_name.png" class="name">
-            <div class="bio">
-                Graphic designer and marketer from Vancouver, BC that blends creativity with a business edge. Drawing from my experience at a NYC venture capital firm and BCIT's BBA program, I specialize in crafting visually compelling solutions grounded in strategic research. Usually finding myself working in the Food and Beverage industry, I thrive in leading advertising campaigns, developing branding materials and improving user experiences. As a multidisciplinary designer, I look forward to exploring new industries and creative mediums.
+        <div class="hidden-Hello">Hello, I am</div>
+        <div class="dashboard">
+            <img src="images/dashboard_back.jpg" class="back">
+            <div class="logo-wrapper">
+                <img src="images/sticker.png" class="sticker">
+                <img src="images/logo_name.png" class="name">
+                <div class="bio">
+                    Graphic designer and marketer from Vancouver, BC that blends creativity with a business edge. Drawing from my experience at a NYC venture capital firm and BCIT's BBA program, I specialize in crafting visually compelling solutions grounded in strategic research. Usually finding myself working in the Food and Beverage industry, I thrive in leading advertising campaigns, developing branding materials and improving user experiences. As a multidisciplinary designer, I look forward to exploring new industries and creative mediums.
+                </div>
+                <button class="contact btn_submit">Contact Me</button>
             </div>
-            <button class="contact btn_submit">Contact Me</button>
+            <div class="hidden_Bio">
+                <div class="bio">
+                    Natthan Davis,<b> a graphic designer and marketer</b> from Vancouver, BC that blends creativity with a business edge. Drawing from my experience at a <b> NYC venture capital firm</b> and <b>BCIT's BBA program</b>, I specialize in crafting<b> visually compelling solutions</b> grounded in <b>strategic research.</b>
+                </div>
+                <button class="contact_mobile btn_submit">Contact Me</button>
+            </div>
+        </div>
+        <div class="videos">
+            <div class="video-pc row">
+                <div class="col-md-6 col-sm-7">
+                    <div class="video-pc-title">Videos We Create</div>
+                    <div class="video-pc-content">
+                        What: I specialize in video production that allows companies to connect directly with their audience through effective and creative storytelling. My goal is to collaborate and work towards the best possible outcome by utilizing all my skill on your behalf. 
+                        <br /><br />
+                        So lets create something unforgettable together.                     
+                    </div>
+                    <button class="contact_mobile btn_submit">View Past Work</button>
+                </div>
+                <div class="col-md-6 col-sm-5 video-video">
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/1003833406" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="video-mobile">
+                <div class="video-pc-title">
+                    Videos We Create
+                </div>
+                <div class="video-video">
+                    <div class="video-container">
+                        <iframe src="https://player.vimeo.com/video/1003833406" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="video-pc-content">
+                    <b>What: </b> <i>Social We ccreative narritive videos that try and capture nautral beautry somthing and somthing. Our work is ment to hold a purpose and educat</i>
+                    <br /> 
+                    <b>Why: </b> <i>IBecuase it;s fun, collabertive and somthing else. </i>
+                </div>
+                <button class="video-middle-btn btn_submit">View Past Work</button>
+                <br /> <br />
+            </div>
+        </div>
+        <div class="services">
+            <div class="title">
+                Services We Provide
+            </div>
+            <div class="row">
+                <div class="box col-md-8 col-xs-12">
+                    <div class="title2">Videography</div>
+                    <div class="detail_title">Promotional Videos</div>
+                    <div class="detail">Implemented new creative process for grass-fed dairy brand for weekly social media videos. </div>
+                    <img src="images/promotional-video.png" class="logo">
+                </div>
+                <div class="box col-md-4 col-xs-6">
+                    <div class="title2">Videography</div>
+                    <div class="detail_title">Event Media</div>
+                    <div class="detail">Capturing life as it happens </div>
+                    <img src="images/event-media.png" class="logo">
+                </div>
+
+                <div class="box col-md-4 col-xs-6">
+                    <div class="title2">Design</div>
+                    <div class="detail_title">Short-form Videos</div>
+                    <div class="detail">Reaching new audiences </div>
+                    <img src="images/short-form-videos.png" class="logo">
+                </div>
+
+                <div class="box col-md-8 col-xs-12">
+                    <div class="title2">Design</div>
+                    <div class="detail_title">Brand Documentires</div>
+                    <div class="detail">capturing the essence of your brand, highlighting its values, unique journey, and the passion driving your business, creating a lasting impact on your target audience. </div>
+                    <img src="images/brand-documentires.png" class="logo">
+                </div>
+                <div class="box col-md-8 col-xs-12">
+                    <div class="title2">Advertising</div>
+                    <div class="detail_title">Marketing Management</div>
+                    <div class="detail">Wearing different hats to go from concept to finished product </div>
+                    <img src="images/marketing-management.png" class="logo">
+                </div>
+                <div class="box col-md-4 col-xs-12">
+                    <div class="title2">Design</div>
+                    <div class="detail_title">Graphic Design</div>
+                    <div class="detail">Visual communication </div>
+                    <img src="images/graphic-design.png" class="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>hello@natthandavis.com</div>
+            <div>Natthan Davis 2024</div>
+            <div class="text-center">Built by Luka Ayala</div>
         </div>
     </div>
     
