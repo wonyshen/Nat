@@ -67,19 +67,9 @@ ul {
 ul li:not(.ul_menu li) {
     padding-left: 15px;
     position: relative;
-
 }
 
-ul li:not(.ul_menu li)::before {
-    content: "";
-    background: black;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 3.5px;
-    height: 3.5px;
-}
+
 
 .container {
     max-width: 1380px;
