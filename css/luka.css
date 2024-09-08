@@ -332,6 +332,43 @@
     padding: 40px 30px 20px 30px;
   }
 
+  .black-line {
+    
+  }
+
+  .section-title::before {
+    display: inline-block;
+    background-image: url(../images/black-line-horizontal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85%;
+    margin: 0;
+    height: 20px;
+  }
+
+  .hidden-img {
+    display: none;
+  }
+
+  .shown-img {
+    display: block;
+  }
+
+  ul li:not(.ul_menu li)::before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 3.5px;
+    height: 3.5px;
+}
+.p-20 {
+    padding: 20px;
+}
+  
+
 @media screen and (max-width:1220px) {
 
     .video-video{
@@ -350,6 +387,34 @@
         position: relative;
         margin-left: 50px;
         margin-top: 20px;
+    }
+    .shown-img {
+        display: block;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .videography_info {
+        display: inline;
+        float: right;
+    }
+    .featuredproject-title {
+        display: inline;
+    }
+    .videography_content {
+        margin-top: 50px;
+    }
+    .specialbtn-p {
+        margin-top: 30px;
+    }
+
+    .hidden-img {
+        display: block;
+        float: left;
+        margin-right: 20px;
+    }
+    .shown-img {
+        display: none;
     }
 }
 
@@ -387,6 +452,11 @@
         margin-top: 20px;
         transform: scale(0.7, 0.7) translate(-50px, -20px);
     }
+
+    .boat {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -394,6 +464,10 @@
     .video-video{
         margin-top: 50px;
         padding: 10px;
+    }
+    .half {
+        width: 50%;
+        display: table-cell;
     }
 }
 
